@@ -1,0 +1,597 @@
+@font-face {
+    font-family: anton;
+    src: url(Anton-Regular.ttf);
+}
+
+.active {
+    color: #fff;
+    font-weight: 900;
+    border-bottom: 2px solid #909090;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    /* background-color: #bde0fe; */
+}
+
+.home {
+    height: 100%;
+    width: 100%;
+    background-image: url(back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    /* background-color: yellow; */
+    /* border: 1px solid black; */
+    /* position: absolute; */
+    display: flex;
+    padding: 0 3vw;
+}
+
+.left-nav {
+    height: 100%;
+    width: 23%;
+    /* background-color: crimson; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 2vw;
+}
+
+.left-nav h1 {
+    font-size: 1.6vw;
+    color: #fff;
+    font-weight: 300;
+}
+
+.left-nav h1:hover {
+    cursor: pointer;
+}
+
+.left-nav h1 span {
+    color: #70d6ff;
+    font-weight: 800;
+}
+
+.left-nav p {
+    font-size: .9vw;
+    color: #fff;
+}
+
+.mid-nav {
+    height: 100%;
+    width: 57%;
+    /* background-color: darkorange; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 1vw;
+    z-index: 1;
+    position: relative;
+}
+
+.mid-nav a {
+    text-decoration: none;
+    margin: 0 1.7vw;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1vw;
+}
+
+.mid-nav a:hover {
+    color: #909090;
+    border-bottom: 1px solid #909090;
+    cursor: pointer;
+}
+
+.border {
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    border-left: 1px solid #fff;
+    z-index: -1;
+}
+
+.right-nav {
+    height: 100%;
+    width: 20%;
+    /* background-color: salmon; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 2vw;
+}
+
+.right-nav button {
+    padding: .6vw 1vw;
+    margin: 0 1vw;
+    border: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 2px;
+    font-size: .9vw;
+    font-weight: 600;
+}
+
+.menubutton {
+    display: none;
+}
+
+.home-content {
+    height: calc(100% - 100px);
+    width: 100%;
+    /* background-color: darkorange; */
+    display: flex;
+}
+
+.left-home-content {
+    width: 50%;
+    height: 100%;
+    /* background-color: darkred; */
+    padding: 5vw;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.left-home-content h1 {
+    font-size: 4vw;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #2d2c2c;
+    font-family: anton;
+    font-weight: 400;
+}
+
+.left-home-content p {
+    font-size: 1.3vw;
+    line-height: 1.2;
+    margin: 2vw 0;
+    color: #696767;
+}
+
+.left-home-content button {
+    padding: .9vw 10vw;
+    background-color: deeppink;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.1vw;
+    /* margin: 1vw 0; */
+    color: #fff;
+    font-weight: 600;
+    background-color: #ff8c00;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.circlediv {
+    display: flex;
+    margin: 2vw 0;
+    width: 63%;
+    justify-content: center;
+    /* background-color: darkred; */
+}
+
+.circle {
+    height: 1.5vw;
+    width: 1.5vw;
+    border-radius: 50%;
+    /* background-color: #ff8c00; */
+    margin: 0 .5vw;
+}
+
+.dark {
+    background-color: #ff8c00;
+}
+
+.light {
+    background-color: #ffb152;
+}
+
+.lighter {
+    background-color: #ffc885;
+}
+
+.right-home-content {
+    width: 50%;
+    height: 100%;
+    /* background-color: darkred; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-home-content img {
+    width: 90%;
+}
+
+/* Client page design */
+/* Swiper js design */
+
+.clients {
+    height: 70%;
+    width: 100%;
+    /* background-color: #ff8c00; */
+    padding: 2vw 5vw;
+    /* background-color: #8bdeff; */
+}
+
+.clients h1 {
+    font-size: 2.5vw;
+    margin: 1vw 0;
+    text-transform: uppercase;
+    font-family: anton;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.mySwiper {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    overflow-x: auto;
+}
+
+.swiper-wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    display: block;
+    height: 80%;
+    padding: 0 1vw;
+}
+
+.swiper::-webkit-scrollbar {
+    display: none;
+}
+
+.swiper-imgs {
+    display: none;
+}
+
+
+/* technology page design */
+
+.technology {
+    height: 180vh;
+    width: 100%;
+    background-color: #f4f8ff;
+    padding: 2vw 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.technology>h1 {
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    font-family: anton;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-align: center;
+    margin: 2vw 0;
+}
+
+.technology-div {
+    height: 80vh;
+    width: 100%;
+    /* background-color: darkgoldenrod; */
+    margin: .5vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tech-card {
+    height: 70vh;
+    width: 30%;
+    background: rgba(255, 255, 255, .4);
+    backdrop-filter: blur(15px);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-card img {
+    width: 7vw;
+}
+
+.tech-card h1 {
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-family: anton;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-align: center;
+    margin: 2vw 0;
+}
+
+.tech-card p {
+    font-size: 1.1vw;
+    font-weight: 200;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+/* Footer styling */
+
+.footer {
+    width: 100%;
+    height: 60vh;
+    background-color: #2d2c2c;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 3vw;
+}
+
+.footer-div {
+    height: 50vh;
+    width: 30%;
+    /* background-color: darkred; */
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+}
+
+.footer-div h1 {
+    margin: 2vw 0;
+}
+
+.footer-div p {
+    line-height: 2.2;
+}
+
+@media (min-width: 1px) and (max-width: 425px) {
+    nav {
+        height: 80px;
+        /* background-color: crimson; */
+    }
+
+    .mid-nav {
+        display: none;
+    }
+
+    .right-nav {
+        display: none;
+    }
+
+    .left-nav {
+        width: 70%;
+        /* background-color: salmon; */
+        padding: 0 2vh;
+    }
+
+    .left-nav h1 {
+        font-size: 2.7vh;
+    }
+
+    .left-nav p {
+        font-size: 1.4vh;
+    }
+
+    .menubutton {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 30%;
+        height: 100%;
+        padding: 0 2vh;
+    }
+
+    .menubutton i {
+        color: #fff;
+        font-size: 2.4vh;
+    }
+
+    .dropdown {
+        position: absolute;
+        display: flex;
+        height: fit-content;
+        width: 100%;
+        background-color: #0e66db;
+        top: 80px;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+
+    .dropdown a {
+        font-size: 1.9vh;
+        margin: 2vh 5vh;
+    }
+
+    .home-content {
+        flex-direction: column;
+        /* background-color: darkred; */
+        height: 90vh;
+    }
+
+    .left-home-content {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .left-home-content h1 {
+        font-size: 4.8vh;
+        text-align: left;
+    }
+
+    .left-home-content p {
+        font-size: 1.8vh;
+        width: 90%;
+        margin: 3vh 0;
+        text-align: left;
+        line-height: 1.1;
+    }
+
+    .left-home-content button {
+        padding: 1.5vh 4vh;
+        font-size: 1.7vh;
+        margin: 0 auto;
+    }
+
+    .circlediv {
+        /* background-color: darkred; */
+        justify-content: center;
+        margin: 2vh auto;
+    }
+
+    .circle {
+        height: 1.5vh;
+        width: 1.5vh;
+    }
+
+    .right-home-content {
+        width: 100%;
+        /* background-color: darkred; */
+        height: fit-content;
+    }
+
+    .clients {
+        /* background-color: darkred; */
+        padding: 3vh;
+        height: fit-content;
+        padding-top: 6vh;
+    }
+
+    .clients h1 {
+        font-size: 3vh;
+        margin: 3vh 0;
+    }
+
+    .swiper {
+        padding: 0;
+        margin: 0;
+    }
+
+    .swiper-wrapper {
+        display: none;
+    }
+
+    .swiper-imgs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        width: 100%;
+        /* background-color: darkgreen; */
+    }
+
+    .swiper-slide {
+        height: 30%;
+        width: 100%;
+        /* background-color: #ff8c00; */
+    }
+
+    .swiper-slide img {
+        width: 40%;
+        margin: 1vh;
+        border: none;
+    }
+
+    .technology {
+        /* background-color: darkred; */
+        height: fit-content;
+        padding: 3vh;
+    }
+
+    .technology>h1 {
+        font-size: 3vh;
+    }
+
+    .technology-div {
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .tech-card {
+        width: 100%;
+        margin: 2vh 0;
+        padding: 5vh 3vh;
+        height: fit-content;
+    }
+
+    .tech-card img {
+        width: 10vh;
+    }
+
+    .tech-card h1 {
+        font-size: 3vh;
+        margin: 3vh 0;
+    }
+
+    .tech-card p {
+        font-size: 2vh;
+    }
+
+    .footer {
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .footer-div {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .footer-div h1{
+        font-size: 2.5vh;
+    }
+
+    .footer-div p {
+        font-size: 2vh;
+    }
+}
